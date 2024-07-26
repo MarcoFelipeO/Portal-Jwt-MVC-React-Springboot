@@ -7,10 +7,11 @@ function RegistrationPage() {
 
     const [formData, setFormData] = useState({
         nombre: '',
+        apellido: '',
         email: '',
         password: '',
         role: '',
-        city: ''
+        ciudad: ''
     });
 
     const handleInputChange = (e) => {
@@ -29,10 +30,11 @@ function RegistrationPage() {
             // Clear the form fields after successful registration
             setFormData({
                 nombre: '',
+                apellido: '',
                 email: '',
                 password: '',
                 role: '',
-                city: ''
+                ciudad: ''
             });
             alert('Usuario Registrado Exitosamente');
             navigate('/admin/user-management');
@@ -65,7 +67,7 @@ function RegistrationPage() {
                 </div>
                 <div className="form-group">
                     <label>Ciudad:</label>
-                    <input type="text" name="city" value={formData.city} onChange={handleInputChange} placeholder="Enter your city" required />
+                    <input type="text" name="ciudad" value={formData.ciudad} onChange={handleInputChange} placeholder="Enter your city" required />
                 </div>
                 <button type="submit">Registro</button>
             </form>

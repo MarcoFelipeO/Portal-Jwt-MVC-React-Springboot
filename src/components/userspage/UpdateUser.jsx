@@ -8,10 +8,10 @@ function UpdateUser() {
 
 
   const [userData, setUserData] = useState({
-    name: '',
+    nombre: '',
     email: '',
     role: '',
-    city: ''
+    ciudad: ''
   });
 
   useEffect(() => {
